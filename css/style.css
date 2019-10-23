@@ -1,0 +1,150 @@
+/* =================================
+  varibales
+==================================== */
+/* =================================
+  mixin
+==================================== */
+/* =================================
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+body p {
+  font-weight: 200;
+  margin: 0;
+}
+
+header {
+  margin-top: 6em;
+  text-align: center;
+}
+header p {
+  color: #a3a5ad;
+  padding-right: 2.6em;
+  padding-left: 2.6em;
+  line-height: 1.5em;
+  margin: 1.6em auto 5em auto;
+  max-width: 38.5em;
+}
+
+h1 {
+  color: #4c4e61;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 200;
+}
+
+h2 {
+  color: #4c4e61;
+  margin: 0;
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+h3 {
+  color: #4c4e61;
+  margin: 0;
+  font-size: 1.333em;
+  font-weight: 600;
+}
+
+img {
+  width: 3.8em;
+  height: 3.8em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.733em;
+  margin-top: 1.333em;
+  margin-bottom: 4em;
+}
+
+.attribution a {
+  color: #fcaf4a;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+.main-container,
+.first-card,
+.second-card,
+.third-card,
+.fourt-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  align-items: center;
+}
+
+img {
+  align-self: flex-end;
+}
+
+.main-container {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+.main-container p {
+  color: #a3a5ad;
+  padding-bottom: 2em;
+  margin-top: 0.667em;
+  font-size: 0.867em;
+}
+
+.first-card {
+  margin-bottom: 25px;
+  border-top: 3px solid #45d3d3;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
+  padding: 1.6em 2em;
+  max-height: 230px;
+  max-width: 300px;
+}
+
+.second-card {
+  margin-bottom: 25px;
+  border-top: 3px solid #e95252;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
+  padding: 1.6em 2em;
+  max-height: 230px;
+  max-width: 300px;
+}
+
+.third-card {
+  margin-bottom: 25px;
+  border-top: 3px solid #fcaf4a;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
+  padding: 1.6em 2em;
+  max-height: 230px;
+  max-width: 300px;
+}
+
+.fourt-card {
+  margin-bottom: 25px;
+  border-top: 3px solid #549df2;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
+  padding: 1.6em 2em;
+  max-height: 230px;
+  max-width: 300px;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+/*# sourceMappingURL=style.css.map */

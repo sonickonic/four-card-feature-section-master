@@ -1,0 +1,117 @@
+
+@import 'partials/variables', 'partials/mixin';
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  font-size: 15px;
+  margin: 0;
+  p {
+    font-weight: 200;
+    margin: 0;
+  }
+}
+
+header {
+  margin-top: 6em;
+  text-align: center;
+  p {
+    color: $grayish-blue;
+    padding-right: 2.6em;
+    padding-left: 2.6em;
+    line-height: 1.5em;
+    margin: 1.6em auto 5em auto;
+    max-width: 38.5em;
+  }
+}
+
+h1 {
+  @include title(1.6em, 200);
+}
+
+h2 {
+  @include title(1.6em, 600) {
+    margin-top: 0.2em;
+  }
+}
+
+h3 {
+  @include title(1.333em, 600);
+}
+
+img {
+  width: 3.8em;
+  height: 3.8em;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.733em;
+  margin-top: 1.333em;
+  margin-bottom: 4em;
+}
+
+.attribution {
+  a {
+    color: $orange;
+  }
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+.main-container,
+.first-card,
+.second-card,
+.third-card,
+.fourt-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  align-items: center;
+}
+
+img {
+  align-self: flex-end;
+}
+
+.main-container {
+  margin-right: 2em;
+  margin-left: 2em;
+  p {
+    color: $grayish-blue;
+    padding-bottom: 2em;
+    margin-top: 0.667em;
+    font-size: 0.867em;
+  }
+}
+
+.first-card {
+  @include card-style($cyan);
+}
+
+.second-card {
+  @include card-style($red);
+}
+
+.third-card {
+  @include card-style($orange);
+}
+
+.fourt-card {
+  @include card-style($blue);
+}
+
+/* =================================
+  Media Queries
+==================================== */
