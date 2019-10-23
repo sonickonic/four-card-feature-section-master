@@ -1,10 +1,4 @@
 /* =================================
-  varibales
-==================================== */
-/* =================================
-  mixin
-==================================== */
-/* =================================
   Base Element Styles
 ==================================== */
 * {
@@ -79,7 +73,8 @@ footer {
 .first-card,
 .second-card,
 .third-card,
-.fourt-card {
+.fourt-card,
+.secondary-container {
   display: flex;
   flex-direction: column;
 }
@@ -109,8 +104,7 @@ img {
   border-radius: 5px;
   box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
   padding: 1.6em 2em;
-  max-height: 230px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .second-card {
@@ -119,8 +113,7 @@ img {
   border-radius: 5px;
   box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
   padding: 1.6em 2em;
-  max-height: 230px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .third-card {
@@ -129,8 +122,7 @@ img {
   border-radius: 5px;
   box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
   padding: 1.6em 2em;
-  max-height: 230px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .fourt-card {
@@ -139,12 +131,39 @@ img {
   border-radius: 5px;
   box-shadow: 0px 10px 15px -1px rgba(84, 157, 242, 0.15);
   padding: 1.6em 2em;
-  max-height: 230px;
-  max-width: 300px;
+  max-width: 350px;
 }
 
 /* =================================
   Media Queries
 ==================================== */
+@media (min-width: 800px) {
+  .secondary-container {
+    flex-direction: row;
+  }
+
+  .second-card {
+    margin-right: 1.666em;
+  }
+
+  .first-card,
+.second-card,
+.third-card,
+.fourt-card {
+    padding-top: 2.666em;
+    padding-bottom: 2.666em;
+  }
+}
+@media (min-width: 1440px) {
+  .main-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .secondary-container {
+    flex-direction: column;
+    margin-left: 1.666em;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
